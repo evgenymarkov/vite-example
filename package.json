@@ -7,6 +7,10 @@
     "serve": "vite preview"
   },
   "dependencies": {
+    "@bem-react/classname": "1.5.10",
+    "@bem-react/core": "3.0.6",
+    "@bem-react/di": "2.2.6",
+    "@yandex/ui": "3.11.0",
     "react": "16.14.0",
     "react-dom": "16.14.0"
   },
