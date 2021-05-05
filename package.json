@@ -3,8 +3,9 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
-    "serve": "vite preview"
+    "build": "vite build",
+    "preview": "vite preview",
+    "type-check": "tsc --noEmit"
   },
   "dependencies": {
     "@bem-react/classname": "1.5.10",
@@ -12,7 +13,8 @@
     "@bem-react/di": "2.2.6",
     "@yandex/ui": "3.11.0",
     "react": "16.14.0",
-    "react-dom": "16.14.0"
+    "react-dom": "16.14.0",
+    "wouter": "2.7.4"
   },
   "devDependencies": {
     "@types/react": "16.14.5",
