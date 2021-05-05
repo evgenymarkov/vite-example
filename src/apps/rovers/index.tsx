@@ -1,9 +1,20 @@
-import React, { memo } from 'react';
+import React, { useState, memo } from 'react';
+import { Textarea } from '@yandex/ui/Textarea/desktop/bundle';
 
 function RoversApp() {
-  return <div>RoversApp</div>;
+  const [value, setValue] = useState('');
+
+  return (
+    <div>
+      RoversApp
+      <Textarea
+        size="m"
+        view="default"
+        value={value}
+        onChange={(event) => setValue(event.target.value)}
+      />
+    </div>
+  );
 }
 
-const EnhancedRoversApp = memo(RoversApp);
-
-export { EnhancedRoversApp as RoversApp };
+export default memo(RoversApp);

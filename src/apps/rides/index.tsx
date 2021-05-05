@@ -1,9 +1,15 @@
 import React, { memo } from 'react';
+import { Button } from '@yandex/ui/Button/desktop/bundle';
 
 function RidesApp() {
-  return <div>RidesApp</div>;
+  return (
+    <div>
+      RidesApp
+      <Button view="default" size="m">
+        Show me rides
+      </Button>
+    </div>
+  );
 }
 
-const EnhancedRidesApp = memo(RidesApp);
-
-export { EnhancedRidesApp as RidesApp };
+export default memo(RidesApp);
