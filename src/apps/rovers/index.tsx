@@ -1,18 +1,19 @@
-import React, { useState, memo } from 'react';
-import { Textarea } from '@yandex/ui/Textarea/desktop/bundle';
+import React, { memo } from 'react';
+import { useLocation } from 'wouter';
+import { Button } from '@yandex/ui/Button/desktop/bundle';
 
 function RoversApp() {
-  const [value, setValue] = useState('');
+  const [_, setLocation] = useLocation();
+
+  const handleButtonClick = () => {
+    setLocation('/rides');
+  };
 
   return (
     <div>
-      RoversApp
-      <Textarea
-        size="m"
-        view="default"
-        value={value}
-        onChange={(event) => setValue(event.target.value)}
-      />
+      <Button view="default" size="m" onClick={handleButtonClick}>
+        Go to Rides App
+      </Button>
     </div>
   );
 }
